@@ -1,0 +1,2 @@
+- bake RSelenium and plumber into an rstudio image
+- make docker image for plumber

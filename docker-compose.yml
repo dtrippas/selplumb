@@ -7,11 +7,11 @@ services:
             - 4444:4444
 
     r-tidyverse: 
-        image: rocker/tidyverse 
+        image: dtrippas/tidyverse-plus:v0.0.3 
         ports:
             - 8787:8787
+            - 80:80
         environment:
-            - PASSWORD=a021712B
+            - PASSWORD=12345678
         volumes:
             - ./:/home/rstudio
-

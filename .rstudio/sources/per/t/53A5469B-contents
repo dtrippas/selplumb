@@ -1,11 +1,5 @@
-# install/load packages
-# require(tidyverse)
-# install.packages("pacman")
-# install.packages("plumber")
-# install.packages("RSelenium")
-
-require(plumber)
-require(RSelenium)
+# load packages
+pacman::p_load(plumber, RSelenium, tictoc)
 
 # specify remote driver
 remDr <- remoteDriver(
@@ -14,8 +8,7 @@ remDr <- remoteDriver(
   , browserName = "chrome"
 )
 
-
-# debug
+#################### debug
 if(F) {
   url <- "https://www.google.com/maps/place/Ludwig+(Das+Burger+Restaurant)/@47.8041294,13.0467549,13z/data=!4m8!1m2!2m1!1sludwig!3m4!1s0x4776907ccd30f78b:0x5c6e4658a7d7af3c!8m2!3d47.8040918!4d13.0466442?hl=en"
   

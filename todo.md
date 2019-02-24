@@ -1,6 +1,1 @@
-- run detached
-- mount working directory
-- bake RSelenium and plumber into an rstudio image?
-- write function to get element given a URL
-- write plumber API
-
+- change API such that it will take a place id instead of a url
