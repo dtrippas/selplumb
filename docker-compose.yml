@@ -11,7 +11,7 @@ services:
         ports:
             - 8787:8787
         environment:
-            - PASSWORD=a021712B
+            - PASSWORD=12345678
         volumes:
             - ./:/home/rstudio
 
