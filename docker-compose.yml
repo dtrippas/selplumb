@@ -6,12 +6,17 @@ services:
         ports: 
             - 4444:4444
 
-    r-tidyverse: 
-        image: dtrippas/tidyverse-plus:v0.0.3 
+    scrape-api:
+        image: dtrippas/scrape-api
         ports:
-            - 8787:8787
             - 80:80
-        environment:
-            - PASSWORD=12345678
-        volumes:
-            - ./:/home/rstudio
+
+#     r-tidyverse: 
+#         image: dtrippas/tidyverse-plus:v0.0.4 
+#         ports:
+#             - 8787:8787
+#             - 80:80
+#         environment:
+#             - PASSWORD=12345678
+# #        volumes:
+#            - ./:/home/rstudio

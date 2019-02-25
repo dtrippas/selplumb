@@ -2,7 +2,11 @@
 source("setup.R")
 
 #* @get /scrape_description
-scrape_description <- function(url){
+scrape_description <- function(place_id){
+  
+  # construct url from place id
+  base_url <- "https://www.google.com/maps/search/?api=1&query=Google&query_place_id="
+  url      <- paste0(base_url, place_id)
   
   # close previous session if it exists
   remDr$closeall()
