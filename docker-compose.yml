@@ -8,15 +8,7 @@ services:
 
     scrape-api:
         image: dtrippas/scrape-api
+#         deploy:
+#           replicas: 5
         ports:
             - 80:80
-
-#     r-tidyverse: 
-#         image: dtrippas/tidyverse-plus:v0.0.4 
-#         ports:
-#             - 8787:8787
-#             - 80:80
-#         environment:
-#             - PASSWORD=12345678
-# #        volumes:
-#            - ./:/home/rstudio
