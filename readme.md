@@ -7,7 +7,7 @@ So far, the following info gets returned:
 
 # instructions for setup/use
 1. clone this repo: `git pull https://github.com/dtrippas/selplumb.git`
-2. install docker for Windows/Mac/Linux from [the docker website](www.docker.com)
+2. install docker for Windows/Mac/Linux from [the docker website](https://www.docker.com)
 3. ensure the installation works by running `docker run hello-world` in a terminal
 4. start the dtrippas/scrape-api and selenium/standalone-chrome docker files by running `docker-compose up` in the dir that contains `docker-compose.yml`
 5. call the API: `http://localhost/scrape_description?place_id=ChIJzz8T0xDkA0cRMNFd9qQxLG0`
